@@ -14,11 +14,12 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   background-color: ${({theme}) => theme['gray-900']};
-  color: ${({theme}) => theme.white }
+  color: ${({theme}) => theme.white };
+
 };
 
 body, input, button, textarea {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 1rem;
 }
