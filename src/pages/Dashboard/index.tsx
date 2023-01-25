@@ -7,13 +7,24 @@ export function Dashboard() {
     <D.Container>
       <form>
         <D.FormContainer>
-          <label htmlFor="name">Vou trabalhar em</label>
-          <input type="text" id="name" />
+          <label htmlFor="task">I am gonna work on</label>
+          <D.TaskInput
+            type="text"
+            id="task"
+            placeholder='Your project name'
+          />
           
-          <label htmlFor="minuteAmmount">durante</label>
-          <input type="number" id="minuteAmmount"/>
+          <label htmlFor="minuteAmmount">for</label>
+          <D.MinuteAmmountInput 
+            type="number" 
+            id="minuteAmmount"
+            placeholder='00'
+            step={5}
+            min={5}
+            max={60}
+          />
 
-          <span>minutos.</span>
+          <span>minutes.</span>
         </D.FormContainer>
 
         <D.CountdownContainer>
@@ -25,10 +36,10 @@ export function Dashboard() {
         </D.CountdownContainer>
 
 
-        <button type="submit">
+        <D.StartCountdownButton type='submit'>
           <Play size={24}/>
-          Começar
-        </button>
+          Start
+        </D.StartCountdownButton>
       </form>
     </D.Container>
   )

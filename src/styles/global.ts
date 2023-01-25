@@ -20,7 +20,6 @@ body {
 
 body, input, button, textarea {
   font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
   font-size: 1rem;
 }
 `
